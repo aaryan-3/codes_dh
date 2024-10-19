@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Live Weather Forecast</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Chart.js library -->
+</head>
+<body>
+    <div class="container">
+        <h1>Live Weather Forecast for Multiple Cities</h1>
+
+        <!-- Search for cities -->
+        <form id="city-form">
+            <input type="text" id="city-input" placeholder="Enter city names (comma-separated)" required>
+            <button type="submit">Get Weather</button>
+        </form>
+
+        <!-- Weather Info Section -->
+        <div id="weather-info">
+            <h2>Weather Data</h2>
+            <div id="weather-details"></div>
+        </div>
+
+        <!-- Graphs Section -->
+        <div class="graph-section">
+            <h2>Temperature Comparison</h2>
+            <canvas id="tempChart"></canvas>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
